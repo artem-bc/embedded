@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website with Embedded Chatbot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        #chatbot-container {
+            width: 90vw;
+            height: 80vh;
+            max-width: 1000px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            background: white;
+        }
+
+        .page-layout {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbot-container"></div>
+
+    <script type="text/javascript" 
+        id="chatbot-initials-script" 
+        src="https://gst-dev.botscrew.net/widget/script-chatbot.js" 
+        data-server-url="https://gst-dev.botscrew.net/api" 
+        data-bot-id="f28df393-3691-4a49-a218-520ba20a008e"
+        embedded="true" 
+        placeholder-id="chatbot-container"       
+        embedded-width="100%25"
+        embedded-height="100%25"></script>
+</body>
+</html>
